@@ -61,8 +61,7 @@ const resultsShow = allDatas =>{
 
     // Search-Results-All-Output-----
 
-    // const findDiv = document.getElementById('all-results');
-    // findDiv.textContent='';
+    const findDiv = document.getElementById('all-results');
     allDatas.forEach(singleData => {
         const creatDiv = document.createElement('div')
         
@@ -77,7 +76,7 @@ const resultsShow = allDatas =>{
           <p class="card-text"><strong>Author's :</strong> ${singleData.author_name ? singleData.author_name: ""}</p>
           <p class="card-text"><strong>First Published :</strong> ${singleData.first_publish_year ? singleData.first_publish_year: ''}</p>
         </div>
-      </div>
+        </div>
         `
     findDiv.appendChild(creatDiv)
     })
