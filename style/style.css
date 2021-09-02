@@ -1,0 +1,8 @@
+/* Default-Styles */
+        #error-messege{
+            display: none;
+        }
+
+.card img {
+    height: 300px !important;
+}

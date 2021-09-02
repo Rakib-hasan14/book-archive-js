@@ -9,12 +9,8 @@
     <!-- Bootstrap-Link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-    <!-- Default-Styles  -->
-    <style>
-        #error-messege{
-            display: none;
-        }
-    </style>
+    <!-- Custome-Css  -->
+    <link rel="stylesheet" href="style/style.css">
 
 </head>
 <body>
@@ -25,20 +21,30 @@
 
     <!-- Main-Content-Section  -->
     <main>
-        <section class="search-sec">
+        <section class="search-sec mb-0">
             <div class="w-50 mx-auto">
-                <div class="input-group mb-3">
+                <div class="input-group">
                     <input id="search-Field" type="text" class="form-control" placeholder="Enter book name..." aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button onclick="searchResult()" class="btn btn-secondary" type="button" id="button-addon2">Button</button>
-                  </div>
+                    
+                 </div>
+                 <!-- Search-Result-Count  -->
+                 <div class="mb-2">
+                    <p id="search-result-count" class="text-secondary "></p>
+                </div>
+                <!-- Search-Result-Count  -->
             </div>
         </section>
 
+
+
         <!---  Error-Messege --->
-        <div id="error-messege" class="error bg-danger text-white fw-bold text center py-2">
+        <div id="error-messege" class="error bg-danger text-white fw-bold text-center py-2">
             <h2>Please! Enter a Book name</h2>
         </div>
         <!-- Error-Messege -->
+        
+        
 
         <!--  All-Results  -->
         <section>
