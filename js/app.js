@@ -5,16 +5,23 @@ const searchResult = () => {
 
 
     // Clear--- 
+    // Clear--- 
+
     const findDiv = document.getElementById('all-results');
     findDiv.textContent='';
     const findSearchcCount = document.getElementById('search-result-count')
     findSearchcCount.textContent='';
+
+    // Clear--- 
+    // Clear--- 
 
     if(searchFieldValue === ''){
         document.getElementById('error-messege').style.display = 'block'
     }
     else{
         document.getElementById('error-messege').style.display = 'none'
+
+    // Data-Load----
     fetch(`https://openlibrary.org/search.json?q=${searchFieldValue}`)
     
     .then(res => res.json())
@@ -25,6 +32,9 @@ const searchResult = () => {
 }
 
 // Search-&-Data-load-----
+
+
+
 
 // Search-results-show-----
 
@@ -49,9 +59,10 @@ const resultsShow = allDatas =>{
     }
     // search-result-count----
 
+    // Search-Results-All-Output-----
 
-    const findDiv = document.getElementById('all-results');
-    findDiv.textContent='';
+    // const findDiv = document.getElementById('all-results');
+    // findDiv.textContent='';
     allDatas.forEach(singleData => {
         const creatDiv = document.createElement('div')
         
